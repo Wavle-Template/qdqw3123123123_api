@@ -15,7 +15,7 @@ WORKDIR /app
 COPY --from=0 /app/package.json .
 COPY --from=0 /app/yarn.lock .
 # COPY --from=0 /app/assets ./assets
-COPY --from=0 /app/views ./views
+# COPY --from=0 /app/views ./views
 COPY --from=0 /app/node_modules ./node_modules
 # COPY .npmrc .
 COPY --from=0 /app/dist ./dist
