@@ -21,7 +21,7 @@ COPY --from=0 /app/node_modules ./node_modules
 COPY --from=0 /app/dist ./dist
 COPY --from=0 /app/apps ./apps
 COPY --from=0 /app/libs ./libs
-COPY --from=0 /app/database ./database
+# COPY --from=0 /app/database ./database
 
 # RUN ["yarn", "--prod"]
 RUN ["mkdir", "upload"]
